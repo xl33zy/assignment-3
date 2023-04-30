@@ -12,6 +12,13 @@ public class Main {
         System.out.println(stack.size());
         System.out.println(stack.isEmpty());
 
+        stack.push(2);
+        stack.push(3);
+        stack.push(7);
+        stack.push(1);
+
+        System.out.println(stack.size());
+        System.out.println(stack.isEmpty());
     }
 
     private static void testLinkedListQueue() {
