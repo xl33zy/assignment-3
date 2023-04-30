@@ -11,6 +11,13 @@ public class MyLinkedListQueue<T> {
         list.addLast(element);
     }
 
+    public T peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return list.getFirst();
+    }
+
     public T dequeue() {
         if (isEmpty()) {
             throw new NoSuchElementException();
