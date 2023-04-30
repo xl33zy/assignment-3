@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="edited Main">
+    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="testing MyLinkedListStack">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682860065144</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="testing MyLinkedListStack">
+      <created>1682860321724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682860321724</updated>
+    </task>
+    <task id="LOCAL-00027" summary="testing MyLinkedListStack">
+      <created>1682860426769</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682860426769</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +262,7 @@
     <MESSAGE value="added dequeue method to MyLinkedListQueue" />
     <MESSAGE value="added peek method to MyLinkedListQueue" />
     <MESSAGE value="edited Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited Main" />
+    <MESSAGE value="testing MyLinkedListStack" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing MyLinkedListStack" />
   </component>
 </project>
