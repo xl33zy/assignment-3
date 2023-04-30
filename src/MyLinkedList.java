@@ -1,14 +1,14 @@
 import java.util.NoSuchElementException;
 
-public class MyLinkedList<E> {
-    private Node<E> head;
+public class MyLinkedList<T> {
+    private Node<T> head;
     private int size;
 
-    private static class Node<E> {
-        E data;
-        Node<E> next;
+    private static class Node<T> {
+        T data;
+        Node<T> next;
 
-        public Node(E data) {
+        public Node(T data) {
             this.data = data;
         }
     }
@@ -18,31 +18,31 @@ public class MyLinkedList<E> {
         size = 0;
     }
 
-    public void addFirst(E element) {
-        Node<E> newNode = new Node<>(element);
+    public void addFirst(T element) {
+        Node<T> newNode = new Node<>(element);
         newNode.next = head;
         head = newNode;
         size++;
     }
 
-    public E removeFirst() {
+    public T removeFirst() {
         if (head == null) {
             throw new NoSuchElementException();
         }
-        E removed = head.data;
+        T removed = head.data;
         head = head.next;
         size--;
         return removed;
     }
 
-    public E getFirst() {
+    public T getFirst() {
         if (head == null) {
             throw new NoSuchElementException();
         }
         return head.data;
     }
 
-    public void add(int index, E element) {
+    public void add(int index, T element) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
@@ -50,8 +50,8 @@ public class MyLinkedList<E> {
             addFirst(element);
             return;
         }
-        Node<E> newNode = new Node<>(element);
-        Node<E> current = head;
+        Node<T> newNode = new Node<>(element);
+        Node<T> current = head;
         for (int i = 0; i < index - 1; i++) {
             current = current.next;
         }
@@ -60,28 +60,28 @@ public class MyLinkedList<E> {
         size++;
     }
 
-    public E remove(int index) {
+    public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
         }
         if (index == 0) {
             return removeFirst();
         }
-        Node<E> current = head;
+        Node<T> current = head;
         for (int i = 0; i < index - 1; i++) {
             current = current.next;
         }
-        E removed = current.next.data;
+        T removed = current.next.data;
         current.next = current.next.next;
         size--;
         return removed;
     }
 
-    public E get(int index) {
+    public T get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
         }
-        Node<E> current = head;
+        Node<T> current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
@@ -96,8 +96,8 @@ public class MyLinkedList<E> {
         return size == 0;
     }
 
-    public boolean contains(E element) {
-        Node<E> current = head;
+    public boolean contains(T element) {
+        Node<T> current = head;
         while (current != null) {
             if (current.data.equals(element)) {
                 return true;
