@@ -7,6 +7,10 @@ public class Main {
     }
 
     private static void testLinkedListStack() {
+        MyLinkedListStack<Integer> stack = new MyLinkedListStack();
+
+        System.out.println(stack.size());
+        System.out.println(stack.isEmpty());
 
     }
 
