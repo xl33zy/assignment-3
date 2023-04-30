@@ -8,4 +8,8 @@ public class MyLinkedListStack<T> {
     public void push(T element) {
         list.addFirst(element);
     }
+
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
 }
