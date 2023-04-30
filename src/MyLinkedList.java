@@ -1,21 +1,21 @@
 import java.util.Iterator;
 
-public class MyLinkedList<E> implements Iterable<E> {
-    private Node<E> head;
-    private Node<E> tail;
+public class MyLinkedList<T> implements Iterable<T> {
+    private Node<T> head;
+    private Node<T> tail;
     private int size;
 
-    private class Node<E> {
-        private E element;
-        private Node<E> next;
+    private class Node<T> {
+        private T element;
+        private Node<T> next;
 
-        public Node(E element) {
+        public Node(T element) {
             this.element = element;
         }
     }
 
-    public void add(E element) {
-        Node<E> newNode = new Node<>(element);
+    public void add(T element) {
+        Node<T> newNode = new Node<>(element);
         if (size == 0) {
             head = newNode;
         } else {
@@ -25,22 +25,22 @@ public class MyLinkedList<E> implements Iterable<E> {
         size++;
     }
 
-    public E get(int index) {
+    public T get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        Node<E> current = head;
+        Node<T> current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
         return current.element;
     }
 
-    public E remove(int index) {
+    public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        E removedElement;
+        T removedElement;
         if (index == 0) {
             removedElement = head.element;
             head = head.next;
@@ -48,7 +48,7 @@ public class MyLinkedList<E> implements Iterable<E> {
                 tail = null;
             }
         } else {
-            Node<E> previous = head;
+            Node<T> previous = head;
             for (int i = 0; i < index - 1; i++) {
                 previous = previous.next;
             }
@@ -66,16 +66,16 @@ public class MyLinkedList<E> implements Iterable<E> {
         return size;
     }
 
-    public Iterator<E> iterator() {
-        return new Iterator<E>() {
-            private Node<E> current = head;
+    public Iterator<T> iterator() {
+        return new Iterator<T>() {
+            private Node<T> current = head;
 
             public boolean hasNext() {
                 return current != null;
             }
 
-            public E next() {
-                E element = current.element;
+            public T next() {
+                T element = current.element;
                 current = current.next;
                 return element;
             }
