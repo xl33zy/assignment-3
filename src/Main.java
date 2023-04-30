@@ -26,7 +26,18 @@ public class Main {
     }
 
     private static void testLinkedListQueue() {
+        MyLinkedListQueue<Integer> queue = new MyLinkedListQueue();
 
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.size());
+
+        queue.enqueue(3);
+        queue.enqueue(5);
+        queue.enqueue(1);
+
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.peek());
+        System.out.println(queue.size());
     }
 }
 
