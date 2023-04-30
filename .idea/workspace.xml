@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="added size method to MyLinkedListStack">
-      <change beforePath="$PROJECT_DIR$/src/MyLinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedListStack.java" afterDir="false" />
+    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="added constructor to MyLinkedListQueue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedListQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682858458838</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added pop method to MyLinkedListStack">
+      <created>1682858566394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682858566394</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added peek method to MyLinkedListStack">
+      <created>1682858637006</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682858637014</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added constructor to MyLinkedListQueue">
+      <created>1682858735565</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682858735565</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,6 +192,9 @@
     <MESSAGE value="added push method to MyLinkedListStack" />
     <MESSAGE value="added isEmpty method to MyLinkedListStack" />
     <MESSAGE value="added size method to MyLinkedListStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="added size method to MyLinkedListStack" />
+    <MESSAGE value="added pop method to MyLinkedListStack" />
+    <MESSAGE value="added peek method to MyLinkedListStack" />
+    <MESSAGE value="added constructor to MyLinkedListQueue" />
+    <option name="LAST_COMMIT_MESSAGE" value="added constructor to MyLinkedListQueue" />
   </component>
 </project>

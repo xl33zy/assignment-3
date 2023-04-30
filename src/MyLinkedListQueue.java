@@ -1,7 +1,8 @@
 public class MyLinkedListQueue<T> {
-    private MyLinkedList<T> linkedList;
+    private MyLinkedList<T> list;
 
     public MyLinkedListQueue() {
-        linkedList = new MyLinkedList<>();
+        list = new MyLinkedList<>();
     }
+
 }

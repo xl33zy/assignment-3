@@ -25,12 +25,43 @@ public class MyLinkedList<T> {
         size++;
     }
 
+    public void addLast(T element) {
+        if (head == null) {
+            addFirst(element);
+            return;
+        }
+        Node<T> newNode = new Node<>(element);
+        Node<T> current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+        size++;
+    }
+
     public T removeFirst() {
         if (head == null) {
             throw new NoSuchElementException();
         }
         T removed = head.data;
         head = head.next;
+        size--;
+        return removed;
+    }
+
+    public T removeLast() {
+        if (head == null) {
+            throw new NoSuchElementException();
+        }
+        if (head.next == null) {
+            return removeFirst();
+        }
+        Node<T> current = head;
+        while (current.next.next != null) {
+            current = current.next;
+        }
+        T removed = current.next.data;
+        current.next = null;
         size--;
         return removed;
     }
@@ -42,12 +73,27 @@ public class MyLinkedList<T> {
         return head.data;
     }
 
+    public T getLast() {
+        if (head == null) {
+            throw new NoSuchElementException();
+        }
+        Node<T> current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        return current.data;
+    }
+
     public void add(int index, T element) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
         if (index == 0) {
             addFirst(element);
+            return;
+        }
+        if (index == size) {
+            addLast(element);
             return;
         }
         Node<T> newNode = new Node<>(element);
@@ -66,6 +112,9 @@ public class MyLinkedList<T> {
         }
         if (index == 0) {
             return removeFirst();
+        }
+        if (index == size - 1) {
+            return removeLast();
         }
         Node<T> current = head;
         for (int i = 0; i < index - 1; i++) {
@@ -94,16 +143,5 @@ public class MyLinkedList<T> {
 
     public boolean isEmpty() {
         return size == 0;
-    }
-
-    public boolean contains(T element) {
-        Node<T> current = head;
-        while (current != null) {
-            if (current.data.equals(element)) {
-                return true;
-            }
-            current = current.next;
-        }
-        return false;
     }
 }
