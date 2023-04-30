@@ -38,6 +38,10 @@ public class Main {
         System.out.println(queue.isEmpty());
         System.out.println(queue.peek());
         System.out.println(queue.size());
+
+        queue.dequeue();
+        System.out.println(queue.peek());
+        System.out.println(queue.size());
     }
 }
 
