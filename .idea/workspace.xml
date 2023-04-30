@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="added Node class to MyLinkedListStack">
+    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="added head and size properties to MyLinkedListStack">
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyLinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedListStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682857317382</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added head and size properties to MyLinkedListStack">
+      <created>1682857574359</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682857574359</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +138,7 @@
     <MESSAGE value="added MyLinkedListQueue" />
     <MESSAGE value="added constructor for MyLinkedListStack" />
     <MESSAGE value="added Node class to MyLinkedListStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Node class to MyLinkedListStack" />
+    <MESSAGE value="added head and size properties to MyLinkedListStack" />
+    <option name="LAST_COMMIT_MESSAGE" value="added head and size properties to MyLinkedListStack" />
   </component>
 </project>
