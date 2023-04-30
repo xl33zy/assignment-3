@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="test" />
+    <list default="true" id="e68c2011-0f83-4ce2-ad00-acd26acd7c6f" name="Changes" comment="added MyLinkedListStack">
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedListQueue.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,12 +62,43 @@
       <option name="project" value="LOCAL" />
       <updated>1682854249663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added MyLinkedList">
+      <created>1682856433528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682856433528</updated>
+    </task>
+    <task id="LOCAL-00004" summary="edited MyLinkedList">
+      <created>1682856537504</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682856537504</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added MyLinkedListStack">
+      <created>1682856704920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682856704920</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added MyLinkedListStack">
+      <created>1682856721473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682856721473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added main" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="added MyLinkedList" />
+    <MESSAGE value="edited MyLinkedList" />
+    <MESSAGE value="added MyLinkedListStack" />
+    <option name="LAST_COMMIT_MESSAGE" value="added MyLinkedListStack" />
   </component>
 </project>
