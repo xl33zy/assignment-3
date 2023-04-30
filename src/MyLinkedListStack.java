@@ -1,4 +1,6 @@
 public class MyLinkedListStack<T> {
+    private Node<T> head;
+    private int size;
     private MyLinkedList<T> list;
 
     private class Node<T> {
@@ -13,4 +15,6 @@ public class MyLinkedListStack<T> {
     public MyLinkedListStack() {
         list = new MyLinkedList<>();
     }
+
+
 }
